@@ -14,13 +14,13 @@ let package = Package(
             targets: ["EkycVideoCallModule"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/DexJoke/swift-fcsdk-ios.git", from: "4.0.2")
+        .package(url: "https://github.com/cbajapan/fcsdk-ios.git", from: "4.0.0")
     ],
     targets: [
         .target(
             name: "EkycVideoCallModule",
             dependencies: [
-                .product(name: "FCSDKiOS", package: "swift-fcsdk-ios")
+                .product(name: "FCSDKiOS", package: "fcsdk-ios")
             ],
             path: "Sources"
         ),
