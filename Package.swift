@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "EkycVideoCallModule",
             dependencies: [
-                "FCSDKiOS"
+                .product(name: "FCSDKiOS", package: "swift-fcsdk-ios")
             ],
             path: "Sources"
         ),
